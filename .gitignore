@@ -1,0 +1,53 @@
+# Build
+build/
+build-*/
+cmake-build-*/
+
+# Models (large binary files and test outputs)
+models/*.gguf
+models/*.bin
+models/*.txt
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln
+*.vcxproj*
+
+# Compiled
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+
+# CUDA
+*.cubin
+*.ptx
+*.fatbin
+
+# Claude Code
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python local packages
+.pylibs/
+.pip_tmp/
+.pip_cache/
+.venv/
+
+# Generated benchmark and logit dumps
+scripts/logits_reference.json
+scripts/pytorch_e2e_results.json
+scripts/pytorch_baseline_results.json
+cuinfer_logits.json
+
+# Private planning
+PROJECT.md
